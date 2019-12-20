@@ -170,10 +170,10 @@ class ExecutionHandler(tornado.web.RequestHandler):
 
 
                 module_server.listen(port)
-                self.write({'type': 'starting_response',
-                            'module': module_to_start,
-                            'success': True,
-                            'port': port})
+#                self.write({'type': 'starting_response',
+ #                           'module': module_to_start,
+  #                          'success': True,
+   #                         'port': port})
             else:
                 print("module already running, starting denied. stop module first")
                 self.write({'type': 'starting_response',
